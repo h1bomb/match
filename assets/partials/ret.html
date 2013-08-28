@@ -1,0 +1,21 @@
+<div ng-show="!error" style="text-align:center;font-family:Lemon;width:960px;margin:0 auto">
+   <h2>Your Favorites</h2>
+   <i class="icon-heart"></i>{{pic.vote}}<br>
+   <img  ng-src="{{pic.img}}">
+   <h2>Top 10</h2>
+   <table class="table table-hover" >
+	   <thead>
+	    <tr>
+	      <th>Rank</th>
+	      <th>Photo</th>
+	      <th>Vote</th>
+	    </tr>
+	    </thead>
+        <tr ng-repeat="pic in pics|orderBy:'-vote'">
+	      <th>{{$index+1}}</th>
+	      <th><img ng-src="{{pic.img}}" style="max-width:100px"></th>
+	      <th><i class="icon-heart"></i>{{pic.vote}}</th>
+        </tr>
+   </table>
+</div>
+<h2 ng-show="error" style="text-align:center">{{error}}</h2>

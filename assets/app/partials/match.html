@@ -1,0 +1,8 @@
+<div class="row-fluid thumbnails" style="width:960px;margin:0 auto">
+    <div class="span6" style="height:500px;text-align:center;" ng-repeat="pic in pics">
+      <a ng-click="like(pic.id)" class="thumbnail" style="height:560px;overflow:hidden;padding:0;cursor:pointer"> 
+        <img ng-src="{{pic.img}}" style="max-width:470px;min-width:470px"/>
+      </a><br>
+      <a target="_blank" href="#/match/{{pic.img.replace('\/','\|')}}">detail</a>
+    </div>
+  </div>

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en" ng-app="match">
+<head>
+  <meta charset="utf-8">
+  <title>Match Girl</title>
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lemon">
+  <script src="http://cdn.staticfile.org/angular.js/1.1.5/angular.js"></script>
+  <script type="text/javascript" src="http://cdn.staticfile.org/jquery/1.10.2/jquery.js"></script>
+  <script src="js/jquery.ui.widget.js"></script>
+  <script src="js/jquery.fileupload.js"></script>
+  <script src="js/jquery.iframe-transport.js"></script>
+  <script src="js/match.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/services.js"></script>
+  <script src="http://cdn.staticfile.org/angular.js/1.1.5/angular-resource.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+<span class="sl-custom-file" style="position:absolute;display:block;right:12px;zoom:1;cursor:pointer;overflow:hidden;vertical-align:middle;">
+    <input type="button" class="btn"  value="upload a girl"/>
+    <input id="fileupload" style="position:absolute;right:0;top:0;_zoom:30;font-size:300px\9;height:100%;_height:auto;opacity:0;filter:alpha(opacity=0);-ms-filter:'alpha(opacity=0)';cursor: pointer;" type="file" name="attachments" multiple>
+</span>
+  <h1 style="font-family:Lemon;text-align:center;margin-bottom:30px;font-size:70px;padding:30px;color:pink">Match Girl</h1>
+
+  <div ng-view></div>
+</div>
+</body>
+</html>
